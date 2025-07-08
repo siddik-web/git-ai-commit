@@ -26,7 +26,7 @@ type OllamaResponse struct {
 }
 
 func main() {
-	model := flag.String("model", "llama3.2:1b", "Ollama model name")
+	model := flag.String("model", "gemma3:1b", "Ollama model name")
 	flag.Parse()
 
 	diff, err := getGitDiff()
